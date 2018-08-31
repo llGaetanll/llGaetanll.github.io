@@ -1,0 +1,431 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px, 0px, 0px, 0px;
+}
+
+/*-- GRIDS --
+For each object, define size in its own css object
+
+*/
+
+html, body {
+  background-color: #F5F5F6;
+  height: 100%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #efefef;
+}
+
+.desc-h {
+  padding-left: 5px;
+  grid-area: h;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #212121;
+}
+
+.header-para {
+  color: #102027;
+  grid-area: p;
+  position: relative;
+  font-size: 17px;
+  font-style: italic;
+  text-align: center;
+}
+
+/*TOP-BAR*/
+
+.logo {
+  grid-area: logo;
+  position: relative;
+}
+
+.searchDot {
+  display: none;
+}
+
+.search-g {
+  position: relative;
+  top: -10px;
+}
+
+.searchbar {
+  position: relative;
+  float: left;
+  top: -1px;
+  display: inherit;
+  font-family: Roboto;
+  padding: 8px 8px 8px 25px;
+  font-size: 17px;
+  color: #ccc;
+  grid-area: q;
+  border: none;
+  border-radius: 2px;
+  background-color: #102027;
+}
+
+.item {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  font-family: Roboto;
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.item:hover {
+  color: #fff;
+}
+
+.item1 {
+  display: inherit;
+  grid-area: i1;
+}
+
+.item2 {
+  grid-area: i2;
+}
+
+.item3 {
+  grid-area: i3;
+}
+
+/*LOGIN STUFF*/
+
+.login {
+  display: inherit;
+  grid-area: l;
+  color: #e03526;
+  display: block;
+  position: relative;
+  animation-name: log;
+}
+
+.login:hover {
+  color: #e03526;
+}
+
+.l-op {
+  height: 400px;
+  width: 270px;
+  background: red;
+  z-index: 10;
+}
+
+/*PROJECTS*/
+
+h1 {
+  font-family: Roboto;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.h1 {
+  padding: 10px 10px 10px 10px;
+  font-size: 40px;
+}
+
+.projects {
+  grid-area: bc;
+}
+
+.project {
+  background-color: #fafafa;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 10px 10px 10px 20px;
+  position: relative;
+}
+
+.project:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.project-1 {
+  grid-area: p1;
+}
+
+.project-2 {
+  grid-area: p2;
+}
+
+.project-3 {
+  grid-area: p3;
+}
+
+.project-4 {
+  grid-area: p4;
+}
+
+.project-5 {
+  grid-area: p5;
+}
+
+.project-6 {
+  grid-area: p6;
+}
+
+.title {
+  grid-area: tl;
+}
+
+.paragraph {
+  grid-area: pr;
+}
+
+.p-info {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.bg-acc {
+  background: #102027;
+  color: #fafafa;
+}
+
+.p-waterm {
+  width: 16px;
+  height: 18px;
+  padding: 0px 10px 10px 0px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.p-w-c {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.p-image {}
+
+.spacer {
+  grid-area: s;
+}
+
+/*PROJECTS*/
+
+.c-para {
+  grid-area: de;
+  padding: 0px 10px 10px 20px;
+}
+
+.content {
+  z-index: 10;
+  border-radius: 3px;
+  grid-area: content;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 799px) {
+  .grid {
+    position: relative;
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    /*each new tag is the width of a collumn*/
+    grid-template-rows: 1000px 100px 3120px 30px;
+    /*This sets the 4 rows on the grid relative to each other*/
+    grid-template-areas: "hr hr hr" ". content ." ". bc ." "footer footer footer";
+  }
+}
+
+@media screen and (max-width: 1249px) and (min-width: 800px) {
+  .grid {
+    position: relative;
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    /*each new tag is the width of a collumn*/
+    grid-template-rows: 300px 90px 1270px 30px;
+    /*This sets the 4 rows on the grid relative to each other*/
+    grid-template-areas: "hr hr hr" ". content ." ". bc ." "footer footer footer";
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  /*Because the screen is larger than 736px, this is actually the desktop version*/
+  /*Straight up copy the grid and adjust it mate it can't get any easier than that*/
+  .grid {
+    position: relative;
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    /*each new tag is the width of a collumn*/
+    grid-template-rows: 300px 70px 800px 30px;
+    /*This sets the 4 rows on the grid relative to each other*/
+    grid-template-areas: "hr hr hr" ". content ." ". bc ."/*if you wanna use whitespace write "." instead of things like header or sidebar...*/
+    "footer footer footer";
+    /*NOW WE D R A W
+        make sure to change this accordingly to what you have as grid columns or rows
+    */
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .top-bar {
+    grid-area: top-bar;
+    background-color: #37474f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 32px 1fr 90px 90px 90px;
+    grid-template-rows: 12px 36px 12px;
+    grid-template-areas: ". . . . . ." ". logo . i2 i3 sQ" ". . . . . .";
+  }
+  .searchDot {
+    display: block;
+    grid-area: sQ;
+    position: relative;
+    width: 36px;
+    background: transparent;
+    border: none;
+    justify-self: center;
+    color: white;
+  }
+  .search-close-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    position: relative;
+    top: 5px;
+  }
+  .login {
+    display: none;
+  }
+  .item1 {
+    display: none;
+  }
+  .searchbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .header {
+    grid-area: hr;
+    width: 100%;
+    background-color: #E1E2E1;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 150px 310px 80px 100px;
+    grid-template-areas: ". . ." ". logo ." ". h ." ". p ."
+  }
+  .logo {
+    display: inline;
+    width: 300px;
+    height: 300px;
+  }
+  .header-para {
+    justify-self: center;
+  }
+  .header-title {
+    grid-area: h;
+    position: relative;
+    color: #102027;
+    font-size: 70px;
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .header {
+    grid-area: hr;
+    background-color: #E1E2E1;
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+    grid-template-columns: 1fr 1fr 300px 1fr 1fr;
+    grid-template-rows: 125px 70px 20px;
+    grid-template-areas: ". . . . ." ". . h . ." ". . p . ."
+  }
+  .lHeader {
+    display: none;
+  }
+  .header-para {
+    justify-self: left;
+  }
+  .header-title {
+    grid-area: h;
+    position: relative;
+    color: #102027;
+    font-size: 70px;
+    justify-self: left;
+    left: -5px;
+    top: -24px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .top-bar {
+    grid-area: top-bar;
+    background-color: #37474f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 80px 32px 80px 90px 90px 90px 1fr 250px 15px;
+    grid-template-rows: 12px 36px 12px;
+    grid-template-areas: ". . . . . . . . ." ". logo . i1 i2 i3 . q ." ". . . . . . . . .";
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .block-container {
+    margin: 5px, 5px, 5px, 5px;
+    height: 3050px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1249px) {
+  .block-container {
+    margin: 5px, 5px, 5px, 5px;
+    height: 1205px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "p1 p1" "p1 p1" "p3 p4" "p3 p5" "p2 p5" "p2 p6";
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .block-container {
+    margin: 5px, 5px, 5px, 5px;
+    height: 800px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "p1 p1 p2" "p1 p1 p2" "p3 p4 p2" "p3 p5 p6";
+  }
+}
