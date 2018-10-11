@@ -45,8 +45,14 @@ p {
   margin-bottom: 20px;
 }
 
-.bold {
-  font-weight: 700
+img {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2079c7;
+  font-weight: 700;
 }
 
 .h3-span {
