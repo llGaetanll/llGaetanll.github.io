@@ -4,7 +4,9 @@
     <meta charset="utf-8">
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900|Open+Sans:300i,400,700" rel="stylesheet">
+    <script src="jquery-3.3.1.min.js"></script>
 
+    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Overview</title>
   </head>
@@ -27,8 +29,8 @@
             <p>My projects and awards are listed here on this page and you can <b>click</b> on them
             to find out more on my <a href="https://github.com/llGaetanll">GitHub</a></p> 
         </div>
-        <div style="display: flex; flex: 1">
-
+        <div style="display: flex; flex: 1; justify-content: center;">
+          <div class="logo"></div>
         </div>
         <div class="block">
           <h2>EDUCATION</h2>
@@ -75,7 +77,7 @@ related topics such as computer science, engineering and biomedical.</p>
         </div>
         <div class="block">
           <h2>PROJECTS</h2>
-          <div class="action">
+          <div class="action" id="1">
               <a href="https://github.com/llGaetanll/MobiusML"><div class="action-title">
               <h3>Mobius ML<span class="h3-span">— A tool for quadriplegics using Machine Learning</span></h3>
               <p class="desc">GRADE 12</p>
@@ -84,7 +86,7 @@ related topics such as computer science, engineering and biomedical.</p>
               tool uses facial recognition to allow quadriplegics to move around with
               minimal effort and very little costs.</p>
           </div>
-          <div class="action">
+          <div class="action" id="2">
               <a href="https://github.com/MemeDB"><div class="action-title">
               <h3>MemeDB<span class="h3-span">— A Social Network Database</span></h3>
               <p class="desc">FEB 16 2017 - ONGOING</p>
@@ -93,7 +95,7 @@ related topics such as computer science, engineering and biomedical.</p>
 classify and understand the internet’s humor. It comprises of an app a
 website and a database.</p>
           </div>
-          <div class="action">
+          <div class="action" id="3">
               <a href="https://github.com/llGaetanll/Chroma-Tilt"><div class="action-title">
                 <h3>ChromaTilt<span class="h3-span">— An App for people with colorblindness</span></h3>
                 <p class="desc">GRADE 11</p>
@@ -103,7 +105,7 @@ website and a database.</p>
               better distinguish between colors. This was my first application</p>
               <p>The App Will be updated in November 2018 to support iOS by switching to React Native</p>
             </div>
-            <div class="action">
+            <div class="action" id="4">
             <a href="https://github.com/llGaetanll/PuzzleTimer"><div class="action-title">
               <h3>PuzzleTimer<span class="h3-span">— An App for Rubik’s Cube speedsolving</span></h3>
               <p class="desc">GRADE 11 - ONGOING</p>
@@ -121,7 +123,7 @@ website and a database.</p>
             <p><b>Frameworks</b> p5.js, JQuery, React Native, Node js</p>
           </div>
           <div class="action">
-              <p>Can work with <b>Photoshop</b>, <b>After Effects</b> and <b>Premiere Pro</b></p>
+              <p>Can work with <b>Illustrator</b>, <b>Photoshop</b>, <b>After Effects</b> and <b>Premiere Pro</b></p>
             </div>
           <div class="action">
             <p>Can solve a Rubik’s cube in
