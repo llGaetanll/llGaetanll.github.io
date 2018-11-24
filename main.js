@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+    checkHover();
+
+    let bodyHeigth = $(window).height() - 80;
+
+    $('body').css({
+        'height' : bodyHeigth
+    })
+
+});
+
+function checkHover() {
     $("#1").hover(function () {
         $(".logo").css({
             'background-image' : 'url("./logos/MobiusML.png")',
@@ -9,6 +21,7 @@ $(document).ready(function () {
             'display' : 'none'
         });
     });
+
     $("#2").hover(function () {
         $(".logo").css({
             'background-image' : 'url("./logos/memedb.png")',
@@ -19,6 +32,7 @@ $(document).ready(function () {
             'display' : 'none'
         });
     });
+
     $("#3").hover(function () {
         $(".logo").css({
             'background-image' : 'url("./logos/ChromaTilt.png")',
@@ -29,6 +43,7 @@ $(document).ready(function () {
             'display' : 'none'
         });
     });
+
     $("#4").hover(function () {
         $(".logo").css({
             'background-image' : 'url("./logos/PuzzleTimer.png")',
@@ -39,4 +54,9 @@ $(document).ready(function () {
             'display' : 'none'
         });
     });
-});
+}
+
+function getScreenDim() {
+    console.log('width: ', $(window).width());
+    console.log('height: ', $(window).height());
+}
