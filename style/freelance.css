@@ -156,30 +156,52 @@ img {
   display: inline-block;
   box-shadow: 0 0 20px 0px rgba(51, 70, 86, 0.1);
   transition-duration: 0.3s;
+  transform-style: preserve-3d;
 }
 
-.card.logo {
-  background-image: url('../images/Graphic\ Design@0.75x.png');
+.card {
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-item {
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: contain;
+  transform: translateZ(50px);
+  width: 200px;
+  height: 200px;
+}
+
+.card.logo {
+  background-image: url('../images/logo\ bg@0.5x.png');
   color: #ddd;
 }
 
 .card.react {
-  background-image: url('../images/App\ Dev@0.75x.png');
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+  background-image: url('../images/RN\ code@0.5x.png');
   color: #ddd;
 }
 
 .card.webdev {
-  background-image: url('../images/web\ dev@0.75x.png');
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+  background-image: url('../images/HTML\ code@0.5x.png');
   color: #ddd;
+}
+
+.card-item.logo {
+  background-image: url('../images/Logo@0.5x.png');
+}
+
+.card-item.react {
+  background-image: url('../images/Phone@0.5x.png');
+}
+
+.card-item.webdev {
+  background-image: url('../images/Computer@0.5x.png');
 }
 
 .card:hover {
@@ -253,5 +275,10 @@ img {
 
   .paper.m-left {
     margin: 0px;
+  }
+
+  .card-item {
+    width: 100px;
+    height: 100px;
   }
 }
