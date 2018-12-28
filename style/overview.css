@@ -2,6 +2,8 @@ body {
   min-height: 100%;
   margin: 40px;
   background: #f5f6f5;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
