@@ -18,7 +18,7 @@ body {
 
 p {
   font: 400 16px/24px Roboto,sans-serif;
-  margin: 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 h1 {
@@ -137,6 +137,14 @@ img {
   margin-bottom: var(--paper-margin);
 }
 
+.column.inside {
+  margin: 0px;
+}
+
+.row.inside {
+  margin: 0px;
+}
+
 .card-holder {
   width: 100%;
   height: auto;
@@ -211,6 +219,16 @@ img {
 
 .icon {
   height: 60px;
+}
+
+.boxout {
+  background-color: #f5f5f5;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0px 4px 4px 4px;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 1250px) {

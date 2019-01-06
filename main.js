@@ -9,6 +9,7 @@ $(document).ready(function () {
         'height' : bodyHeigth
     })
 
+    overviewHeight();
 });
 
 function checkHover() {
@@ -93,4 +94,22 @@ function hoverCards() {
 
 function map(input, lowIn, highIn, lowOut, highOut) {
     return (input - lowIn) * (highOut - lowOut) / (highIn - lowIn) + lowOut;
+}
+
+function overviewHeight() {
+    let blockWrappers = $('.block-wrapper');
+    let blockWrapperHeights = []
+    let smallestblock = blockWrappers[0].height;
+
+    console.log('')
+
+    for(b in blockWrappers) {
+        blockWrappers[b].id = 'block-wrapper-' + c;
+        let currentHeight = blockWrappers[b].height();
+        blockWrapperHeights.push(currentHeight);
+        if (currentHeight < smallestblock) {
+            smallestblock = currentHeight;
+        }
+    }
+    console.log('smallest block is ', smallestblock);
 }
