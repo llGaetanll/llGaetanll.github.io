@@ -25,13 +25,11 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin: 0px 0px 30px 0px;
   font-family: 'Open Sans';
   font-weight: 900;
   font-size: 14px;
   color: #2079c7;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 h3 {
@@ -108,7 +106,7 @@ a {
   background-color: #fff;
   padding: 16px;
   margin: 16px 0px;
-  box-shadow: 0 0 16px 5px rgba(51,70,86,.03);
+  box-shadow: 0 0 16px 5px rgba(51, 70, 86, .03);
 }
 
 .t-logo {
@@ -138,6 +136,12 @@ a {
   margin-bottom: 20px;
 }
 
+.cover-photo {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  display: block;
+}
+
 .h3-span {
   font-family: 'Merriweather';
   font-weight: 400;
@@ -160,15 +164,42 @@ a {
   font-style: italic;
 }
 
-/* .content {
-  display: flex;
-  background: #fff;
-  flex-direction: column;
-  padding: 15px;
-  height: -webkit-fill-available;
-  border-radius: 5px;
-  box-shadow: 0 0 16px 5px rgba(51,70,86,.03);
-} */
+#content {
+  display: grid;
+  grid-template-rows: 100px 100px 300px 300px;
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "ti ti ti ti"
+    "ab ed pr sk"
+    "ab ed pr sk"
+    "ab ou pr sk";
+}
+
+.section {
+  display: block;
+  overflow: hidden;
+}
+
+#about {
+  grid-area: ab;
+}
+
+#education {
+  grid-area: ed;
+}
+
+#outreach {
+  grid-area: ou;
+}
+
+#projects {
+  grid-area: pr;
+}
+
+#skills {
+  grid-area: sk;
+}
 
 .paper {
   border-radius: 5px;
@@ -244,6 +275,7 @@ a {
 
 .block-wrapper {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -263,4 +295,43 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1250px) {
+  .content {
+    width: 750px;
+  }
+
+  #content {
+    display: grid;
+    grid-template-rows: 100px 300px 300px 300px;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "ti ti ti"
+      "ab ed pr"
+      "ab ed pr"
+      "sk ou pr";
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .content {
+    width: 350px;
+  }
+
+  #content {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 180px 620px 500px 800px 300px 300px;
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+    grid-template-areas:
+      "ti ti"
+      "ab ab"
+      "pr pr"
+      "pr pr"
+      "sk ou"
+      "sk ou";
+  }
 }

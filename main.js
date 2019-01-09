@@ -97,19 +97,21 @@ function map(input, lowIn, highIn, lowOut, highOut) {
 }
 
 function overviewHeight() {
-    let blockWrappers = $('.block-wrapper');
-    let blockWrapperHeights = []
-    let smallestblock = blockWrappers[0].height;
+    let wrappers = $('.block-wrapper');
+    let shouldScroll = [];
+    
+    wrappers.each(function() {
+        let height = $(this).height();
+        let totalHeight = 0;
+        $(this).children().each(function () {
+            totalHeight += $(this).height();
+        });
 
-    console.log('')
-
-    for(b in blockWrappers) {
-        blockWrappers[b].id = 'block-wrapper-' + c;
-        let currentHeight = blockWrappers[b].height();
-        blockWrapperHeights.push(currentHeight);
-        if (currentHeight < smallestblock) {
-            smallestblock = currentHeight;
+        if(totalHeight > height) {
+            shouldScroll.push(true);
+        } else if(height >= totalHeight) {
+            shouldScroll.push(false);
         }
-    }
-    console.log('smallest block is ', smallestblock);
+    });
+    console.log(shouldScroll);
 }
