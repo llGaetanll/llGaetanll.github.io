@@ -98,20 +98,24 @@ function map(input, lowIn, highIn, lowOut, highOut) {
 
 function overviewHeight() {
     let wrappers = $('.block-wrapper');
+    for(w in wrappers) wrappers[w].id = w;
     let shouldScroll = [];
     
-    wrappers.each(function() {
-        let height = $(this).height();
+    for(let i = 0; i < wrappers.length; i++) {
+        let currentWrapper = '#' + wrappers[i].id;
+        let height = $(currentWrapper).height();
         let totalHeight = 0;
-        $(this).children().each(function () {
+        $(currentWrapper).children().each(function () {
             totalHeight += $(this).height();
         });
 
         if(totalHeight > height) {
             shouldScroll.push(true);
+            $(currentWrapper).addClass('scrollable');
         } else if(height >= totalHeight) {
             shouldScroll.push(false);
         }
-    });
+    }
     console.log(shouldScroll);
+
 }

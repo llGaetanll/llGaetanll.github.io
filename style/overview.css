@@ -297,6 +297,14 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.scrollable {
+  transition-duration: 0.3s;
+}
+
+.scrollable:hover {
+  box-shadow: inset -10px -4px 6px 0px rgba(32, 121, 199, 0.3);
+}
+
 @media only screen and (max-width: 1250px) {
   .content {
     width: 750px;
