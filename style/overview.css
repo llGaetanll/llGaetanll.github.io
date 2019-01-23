@@ -3,6 +3,8 @@
   --paper-padding: 16px;
   --highlight-color: #2079c7;
   --highlight-dark: #778ea2;
+
+  --shadow: 0 0 16px 5px rgba(51, 70, 86, .03);
 }
 
 body {
@@ -106,7 +108,7 @@ a {
   background-color: #fff;
   padding: 16px;
   margin: 16px 0px;
-  box-shadow: 0 0 16px 5px rgba(51, 70, 86, .03);
+  box-shadow: var(--shadow);
 }
 
 .t-logo {
@@ -206,7 +208,7 @@ a {
   background-color: #fff;
   padding: 16px;
   display: inline-block;
-  box-shadow: 0 0 16px 5px rgba(51, 70, 86, 0.03);
+  box-shadow: var(--shadow);
   flex: 1;
 }
 
@@ -228,7 +230,7 @@ a {
   display: flex;
   color: #627585;
   background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(94, 117, 137, 0.4);
+  box-shadow: var(--shadow);
   border-radius: 20px;
   height: 24px;
   padding: 0px 7px;
@@ -305,7 +307,7 @@ a {
   box-shadow: inset -10px -4px 6px 0px rgba(32, 121, 199, 0.3);
 }
 
-@media only screen and (max-width: 1250px) {
+@media screen and (max-device-width: 1250px) {
   .content {
     width: 750px;
   }
@@ -323,23 +325,56 @@ a {
   }
 }
 
-@media only screen and (max-width: 775px) {
+@media screen and (max-device-width: 755px) {
   .content {
     width: 350px;
   }
 
+  .top-content {
+    margin: 16px;
+  }
+
+  .logo {
+    opacity: 0;
+  }
+
+  .block-wrapper {
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  .paper {
+    box-shadow: none;
+  }
+
+  .section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+  }
+
+  .title-desc {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0px auto;
+  }
+
   #content {
     display: grid;
-    width: 100%;
-    grid-template-rows: 180px 620px 500px 800px 300px 300px;
-    grid-template-columns: 150px 150px;
-    grid-gap: 10px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-gap: 20px;
     grid-template-areas:
-      "ti ti"
-      "ab ab"
-      "pr pr"
-      "pr pr"
-      "sk ou"
-      "sk ou";
+      "ti"
+      "ab"
+      "pr"
+      "sk"
+      "ed"
+      "ou";
+    background-color: transparent;
   }
 }
