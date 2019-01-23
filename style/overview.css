@@ -307,7 +307,7 @@ a {
   box-shadow: inset -10px -4px 6px 0px rgba(32, 121, 199, 0.3);
 }
 
-@media screen and (max-device-width: 1250px) {
+@media all and (max-width: 1250px) {
   .content {
     width: 750px;
   }
@@ -325,7 +325,7 @@ a {
   }
 }
 
-@media screen and (max-device-width: 755px) {
+@media all and (max-width: 755px) {
   .content {
     width: 350px;
   }
