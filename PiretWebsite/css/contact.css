@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url('/fonts/gothamhtf-medium-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('/fonts/Gotham-Light.ttf');
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
 h4 {
     font-family: 'Gotham HTF', sans-serif;
     font-size: 44px;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 
 p {
@@ -33,6 +49,21 @@ button {
     margin: 0px;
     flex: 1;
     padding: 0px;
+    margin: 254px 610px;
+}
+
+.logo-img {
+    width: 670px;
+    top: 50%;
+    position: relative;
+    transform: scale(2) translateY(-25%);
+}
+
+.t-para {
+    margin: 45px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: unset;
 }
 
 .left {
@@ -44,7 +75,7 @@ button {
 }
 
 .textbox {
-    margin: 200px 50px;
+    margin: 50px 50px;
     display: flex;
     flex: 1;
     align-items: center;
