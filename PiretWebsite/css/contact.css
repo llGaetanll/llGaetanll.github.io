@@ -1,0 +1,53 @@
+h4 {
+    font-family: 'Gotham HTF', sans-serif;
+    font-size: 44px;
+}
+
+p {
+    font-family: 'Gotham HTF', sans-serif;
+    font-size: 20px;
+}
+
+button {
+    all: unset;
+    font-family: 'Gotham HTF', sans-serif;
+    padding: 5px 20px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.main {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex: 0 1 auto;
+}
+
+.row.main {
+    display: flex;
+    margin: 0px;
+    flex: 1;
+    padding: 0px;
+}
+
+.left {
+    background-color: #ede5df;
+}
+
+.right {
+    background-color: white;
+}
+
+.textbox {
+    margin: 200px 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+

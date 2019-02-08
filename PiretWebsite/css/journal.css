@@ -1,0 +1,32 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.column.journal {
+    margin: 0px calc(45px / 2);
+    flex: 1;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+.column {
+    display: block;
+    margin-bottom: 45px;
+}
+
+.main {
+    width: -webkit-fill-available;
+    margin: 220px calc(-45px / 2) 0px calc(-45px / 2);
+}
