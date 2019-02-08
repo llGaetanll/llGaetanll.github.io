@@ -14,9 +14,10 @@ body {
 
 h4 {
     font-family: 'Gotham HTF', sans-serif;
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 100;
     letter-spacing: 2px;
+    margin: 0px;
 }
 
 p {
@@ -49,21 +50,22 @@ button {
     margin: 0px;
     flex: 1;
     padding: 0px;
-    margin: 254px 610px;
+    margin: 174px 400px;
 }
 
 .logo-img {
-    width: 670px;
-    top: 50%;
-    position: relative;
-    transform: scale(2) translateY(-25%);
+    width: 440px;
+    top: 255px;
+    position: absolute;
+    transform: scale(0.6) translateY(-25%);
 }
 
 .t-para {
     margin: 45px;
-    font-size: 24px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: unset;
+    margin-top: 130px;
 }
 
 .left {
