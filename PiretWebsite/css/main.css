@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Gotham Medium';
-  src: url('/fonts/Gotham-Medium.ttf');
+  src: url(/fonts/Gotham-Medium.ttf);
 }
 
 @font-face {
   font-family: 'Gotham Light';
-  src: url('/fonts/Gotham-Light.ttf');
+  src: url(/fonts/Gotham-Light.ttf);
 }
 
 @font-face {
   font-family: 'Gotham HTF';
-  src: url('/fonts/gothamhtf-medium-webfont.ttf');
+  src: url(/fonts/gothamhtf-medium-webfont.ttf);
 }
 
 @font-face {
   font-family: 'KundaBook';
-  src: url('/fonts/KundaBookPremium-Regular.ttf');
+  src: url(/fonts/KundaBookPremium-Regular.ttf);
 }
 
 * {
@@ -71,13 +71,9 @@ h5 {
 /* TOP BAR */
 
 h1 {
-  margin: 0px;
-
-  /* this is for the top-bar, aka temporary */
-  /* remove it once we have a logo to put there */
-  position: relative;
-  transform: translateY(-25%);
-  height: fit-content;
+  font-size: 24px;
+  font-family: 'Gotham HTF', sans-serif;
+  margin: 0px 0px 0px 10px;
 }
 
 h2 {
@@ -113,11 +109,17 @@ h3 {
 
 .logo {
   height: 72px;
-  top: 12px;
   width: auto;
   display: block;
-  position: absolute;
   cursor: pointer;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 13px;
 }
 
 .tab {
