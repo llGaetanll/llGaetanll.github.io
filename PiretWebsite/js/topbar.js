@@ -67,9 +67,11 @@ class TopBar {
 
         let element =
             `<div class="top-bar">
-                ${logoElement}
-                <div class="spacer"></div>
-                ${section}
+                <div class="top-bar-wrapper">
+                    ${logoElement}
+                    <div class="spacer"></div>
+                    ${section}
+                </div>
             </div>`;
 
         $(this.main).prepend(element);
@@ -148,7 +150,7 @@ class TopBar {
         }
 
         if((newPos > this.height + this.colorThreshold) && (dydt > this.maxV)) {
-            setTimeout(function() {
+            setTimeout(() => {
                 this.__colorBar(true);
             }, 300);
         }

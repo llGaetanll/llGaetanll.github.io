@@ -8,7 +8,6 @@ body {
 
 h1 {
     position: relative;
-    transform: translateY(-25%);
     height: fit-content;
 }
 
@@ -28,6 +27,10 @@ p {
 
 .column {
     flex: 1;
+}
+
+.main {
+    background-color: white;
 }
 
 .main-img {
