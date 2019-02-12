@@ -1,0 +1,1 @@
+:root{--paper-margin:16px;--paper-padding:16px;--highlight-color:#2079c7;--highlight-dark:#778ea2;--shadow:0 0 16px 5px rgba(51, 70, 86, .03)}body{margin:0}.column,.row{display:flex;margin-bottom:var(--paper-margin)}.row{flex-direction:row}.column{flex-direction:column}

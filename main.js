@@ -78,13 +78,13 @@ function hoverCards() {
         xDeg = map(x, 0, width, -12, 12);
         yDeg = map(y, 0, height, 12, -12);
 
-        $(this).css({
+        $(this).children().css({
             'transform': `perspective(1000px) rotateX(${yDeg}deg) rotateY(${xDeg}deg)`
         });
     });
 
     cards.on("mouseleave", function () {
-        $(this).css({
+        $(this).children().css({
             'transform': `perspective(1000px) rotateX(0deg) rotateY(0deg)`
         });
     });
