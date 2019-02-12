@@ -18,6 +18,8 @@ class Journal {
 
     loadPosts(category) {
 
+        $('h6').html(this.category);
+
         if(this.category == '') {
             let postKeys = Object.keys(JOURNAL.posts);
             let itt = 0;

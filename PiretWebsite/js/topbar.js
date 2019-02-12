@@ -1,5 +1,5 @@
 class TopBar {
-    constructor(placement, color) {
+    constructor(placement, color, top) {
         this.height = 40;
         this.prevPos;
         this.prevTime;
@@ -7,16 +7,14 @@ class TopBar {
         this.animationSpeed = 200;
         this.colorThreshold = color;
         this.maxV = 0.8;
-        this.top = 60;
+        this.top = top;
         this.hideTimeout = 3000;
     }
 
     // static so no instance is required to call it
-    static create(parent, colorThreshold = 500) {
-        if (!this.instance) {
-            this.instance = new TopBar(parent, colorThreshold);
-            this.instance.__setup();
-        }
+    static create(parent, colorThreshold = 500, top = 60) {
+        this.instance = new TopBar(parent, colorThreshold, top);
+        this.instance.__setup();
         return this.instance;
     }
 
@@ -32,7 +30,10 @@ class TopBar {
         this.tabs = TOPBAR.tabs;
 
         let logoElement =
-            `<img src="${this.logo}" onClick="redirect('index.html')" class="logo">`;
+            `<div class="header-box">
+                <img src="${this.logo}" onClick="redirect('index.html')" class="logo">
+                <h1>Piret Johanson Studio</h1>
+            </div>`;
 
         let section = '';
         this.mostSubTabs = 0;
@@ -66,9 +67,11 @@ class TopBar {
 
         let element =
             `<div class="top-bar">
-                ${logoElement}
-                <div class="spacer"></div>
-                ${section}
+                <div class="top-bar-wrapper">
+                    ${logoElement}
+                    <div class="spacer"></div>
+                    ${section}
+                </div>
             </div>`;
 
         $(this.main).prepend(element);
@@ -138,7 +141,7 @@ class TopBar {
         let dydt = dy / dt;
         // console.log('dy/dt: ', dy/dt);
 
-        if (dydt < -this.maxV) {
+        if (dydt < -this.maxV || newPos < this.height) {
             this.showBar();
         }
 
@@ -146,8 +149,10 @@ class TopBar {
             this.hideBar();
         }
 
-        if(newPos > this.height + this.colorThreshold) {
-            this.__colorBar(true);
+        if((newPos > this.height + this.colorThreshold) && (dydt > this.maxV)) {
+            setTimeout(() => {
+                this.__colorBar(true);
+            }, 300);
         }
 
         // if the bar is up at the top
@@ -198,7 +203,8 @@ class TopBar {
 }
 
 let color = document.currentScript.getAttribute('colorThreshold');
+let topVal = document.currentScript.getAttribute('topVal');
 
 $(document).ready(() => {
-    topbar = TopBar.create('body', color);
+    topbar = TopBar.create('body', color, top);
 });

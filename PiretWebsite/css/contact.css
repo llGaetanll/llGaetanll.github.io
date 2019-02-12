@@ -34,8 +34,13 @@ button {
 }
 
 .main {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin: 0px;
+    display: flex;
+    flex: 1;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .row {
@@ -46,18 +51,12 @@ button {
 }
 
 .row.main {
-    display: flex;
-    margin: 0px;
-    flex: 1;
-    padding: 0px;
-    margin: 174px 400px;
+    height: 470px;
+    width: 750px;
 }
 
 .logo-img {
-    width: 440px;
-    top: 255px;
-    position: absolute;
-    transform: scale(0.6) translateY(-25%);
+    width: 220px;
 }
 
 .t-para {
@@ -65,21 +64,30 @@ button {
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: unset;
-    margin-top: 130px;
+    margin-top: 60px;
 }
 
 .left {
     background-color: #ede5df;
+    width: 50%;
 }
 
 .right {
     background-color: white;
+    width: 50%;
+}
+
+.column {
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
 }
 
 .textbox {
     margin: 50px 50px;
     display: flex;
     flex: 1;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
