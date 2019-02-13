@@ -20,12 +20,17 @@ const HOME = {
   ],
   "text": {
     "title": "This is the title",
-    "desc": [`Piret Johanson Studio is a Miami-based Concierge Design Firm established in 2001, and specializes in bespoke
-    European Designs. Our projects range from luxury homes and modern workspaces to art galleries, and our
-    services are offered throughout the US, Europe and Latin America. PJS has received multiple international
-    design awards such as Interior Design Magazine’s Best of the Year Finalist and International Property Awards’
-    Best Office Interior. The studio’s work has also been featured in top publications such as Interior Design
-    Magazine, Elle, and Miami Magazine.`]
+    "desc": [
+        [`Piret Johanson Studio is a Miami-based Concierge Design Firm established in 2001, and specializes in bespoke
+        European Designs. Our projects range from luxury homes and modern workspaces to art galleries, and our
+        services are offered throughout the US, Europe and Latin America. `,
+        `PJS has received multiple international
+      design awards such as Interior Design Magazine’s Best of the Year Finalist and International Property Awards’
+      Best Office Interior. The studio’s work has also been featured in top publications such as Interior Design
+      Magazine, Elle, and Miami Magazine.`
+      ]
+      
+    ]
   }
 }
 

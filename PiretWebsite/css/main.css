@@ -96,7 +96,7 @@ h3 {
 .top-bar {
   position: fixed;
   width: -webkit-fill-available;
-  padding: 30px 150px 0px 150px;
+  padding: 30px 150px 30px 150px;
   top: 10px;
 
   z-index: 100;
@@ -191,7 +191,7 @@ h3 {
 }
 
 .t-para {
-  margin: 60px 0px;
+  margin: 60px calc(45px /2);
   text-align: justify;
   font-size: 24px;
   font-family: 'Gotham', sans-serif;
