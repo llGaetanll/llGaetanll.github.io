@@ -1,261 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900|Open+Sans:300i,400,700" rel="stylesheet">
-  <script src="jquery-3.3.1.min.js"></script>
-  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
-  <script src="main.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="./style/main.min.css">
-  <link rel="stylesheet" href="./style/overview.min.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gaetan Almela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+    <script src="main.js"></script>
 </head>
-
 <body>
-  <div class="content">
-    <div class="top-content">
-      <img src="./logos/ColdLogo@4x.png" alt="Home" class="t-logo">
-      <div class="spacer phone-diss"></div>
-      <a href="./freelance.html" class="phone-diss top-link">
-        <h5>Freelance</h5>
-      </a>
-      <a href="./index.html" class="underlined phone-diss top-link">
-        <h5>About</h5>
-      </a>
+    <div class="column main">
+        <div class="logo">
+            <img src="./logos/ColdLogo@4x.png" style="height: 88px">
+        </div>
+        <div class="row cards">
+            <div class="card" style="grid-area: e">
+                <a href="./overview.html">
+                    <h2>E-Portfolio</h2>
+                    <img src="./images/cards/ePortfolio.png" alt="" class="card-img">
+                </a>
+            </div>
+            <div class="card" style="grid-area: g">
+                <a href="https://github.com/llGaetanll">
+                    <h2>GitHub</h2>
+                    <img src="./images/cards/GitHub.png" alt="" class="card-img">
+                </a>
+            </div>
+            <div class="card" style="grid-area: f">
+                <a href="./freelance.html">
+                    <h2>Freelancing</h2>
+                    <img src="./images/cards/Freelance.png" alt="" class="card-img">
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="paper" id="content">
-      <div class="title" style="grid-area: ti;">
-        <h1>Gaetan Almela</h1>
-        <p class="title-desc">Founder of ChromaTilt, MemeDB, and Mobius ML</p>
-      </div>
-      <div class="logo"></div>
-      <div class="section" id="about">
-        <div class="block-wrapper">
-          <h2>ABOUT ME</h2>
-          <img src="https://i.imgur.com/Ktuxnr9.jpg" class="cover-photo">
-          <p><b>Hey!</b> I see that you've found my resume and I'm overjoyed that you
-            would decide to spend your precious time reading it. So out of respect,
-            I'll promise I'll keep it short. </p>
-          <p><b>My name is Gaetan Almela</b> and I'm a French
-            software developer. I moved to America when I was 14 and I've been programming since then.
-          </p>
-          <p>My projects and awards are listed here on this page and you can <b>click</b> on them
-            to find out more on my <a href="https://github.com/llGaetanll">GitHub</a></p>
-          <p>If you have any questions about my projects, you can contact me directly at
-            <b>gaetan.almela@gmail.com</b> and I'll be more than happy to get back to you!</p>
-        </div>
-      </div>
-      <div class="section" id="education">
-        <div class="block-wrapper">
-          <h2>EDUCATION</h2>
-          <div class="action">
-            <div class="action-title">
-              <h3>Gulliver Schools<span class="h3-span">— Miami, FL</span></h3>
-              <p class="desc">AUG 2015 - MAY 2019</p>
-            </div>
-            <p>My high school i what got me into programming. I learned HTML 5 at the
-              end of my freshman year and have continued to learn more since then.</p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>British School of Brussels<span class="h3-span">— Brussels, Belgium</span></h3>
-              <p class="desc">2013 - 2014</p>
-            </div>
-            <p>This is where I learned to solve a rubik's cube for the first time. It's also where I was introduced
-              to the idea of programming.
-            </p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>Mougins School<span class="h3-span">— Mougins, France</span></h3>
-              <p class="desc">2011 - 2013 / 2014 - 2015</p>
-            </div>
-            <p>This is where I learned english.</p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>Ecole des Maurettes<span class="h3-span">— Villeneuve Loubet, France</span></h3>
-              <p class="desc">2007 - 2011</p>
-            </div>
-            <p>General troublemaker, professional doodler.</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="outreach">
-        <div class="block-wrapper">
-          <h2>OUTREACH</h2>
-          <div class="action">
-            <div class="action-title">
-              <h3>Amazon France<span class="h3-span">— Scraping sales websites</span></h3>
-              <p class="desc">GRADE 12</p>
-            </div>
-            <p>I built a web scraper that Amazon in France uses to scrape sales websites
-              and facilitate their work.
-            </p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>Minds DB<span class="h3-span">— Machine Learning with UC Berkeley</span></h3>
-              <p class="desc">GRADE 12</p>
-            </div>
-            <p>I contributed to mindsdb, a machine learning library started by UC berkeley students.
-              I added the entire section about adding the library to Google colab.
-              You can find more about the project <a href="https://github.com/mindsdb/mindsdb">here</a>
-            </p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>Breakthrough Miami<span class="h3-span">— Helping children in developing areas</span></h3>
-              <p class="desc">GRADE 10 - GRADE 12</p>
-            </div>
-            <p>Breakthrough Miami is a club in which we teach middle schoolers STEM
-              related topics such as computer science, engineering and biomedical.</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="projects">
-        <div class="block-wrapper">
-          <h2>PROJECTS</h2>
-          <div class="action" id="1">
-            <div class="action-title">
-              <div class="title-block">
-                <h3>Mobius ML<span class="h3-span">— A tool for quadriplegics using Machine Learning</span></h3>
-              </div>
-              <p class="desc">GRADE 12</p>
-              <div class="buttons">
-                <a href="https://github.com/llGaetanll/MobiusML" class="ref-button">
-                  <h4>GitHub</h4>
-                </a>
-                <a href="https://www.youtube.com/watch?v=zeTphRB3KK8" class="ref-button">
-                  <h4>YouTube</h4>
-                </a>
-              </div>
-            </div>
-            <p>Using a 3 layer feedforward <b>Neural network</b> built in tensorflow.js, this
-              tool uses facial recognition to allow quadriplegics to move around with
-              minimal effort and very little costs.</p>
-            <p>An app for iOS is in the works.</p>
-          </div>
-          <div class="action" id="2">
-            <div class="action-title">
-              <h3>MemeDB<span class="h3-span">— A Social Network Database</span></h3>
-              <p class="desc">FEB 16 2017 - ONGOING</p>
-            </div>
-            <p>A social Network/database optimised for memes made to categorise,
-              classify and understand the internet’s humor. It comprises of an app a
-              website and a database which are currently in developement.</p>
-            <p>I plan to use this data for personal research with <b>machine learning</b>,
-              however I also plan on releasing public datasets for anyone to use.</p>
-            <p>Unfortunately, for security reasons, the project was recently made private.
-              Please contact me at <b>gaetan.almela@gmail.com</b> if you would want to know more about it</p>
-          </div>
-          <div class="action" id="3">
-            <div class="action-title">
-              <h3>ChromaTilt<span class="h3-span">— An App for people with colorblindness</span></h3>
-              <p class="desc">GRADE 11</p>
-              <div class="buttons">
-                <a href="https://github.com/llGaetanll/Chroma-Tilt" class="ref-button">
-                  <h4>GitHub</h4>
-                </a>
-                <a href="https://www.youtube.com/watch?v=679i0RwXcFg" class="ref-button">
-                  <h4>TV</h4>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.almela.gaetan.chromatilt" class="ref-button">
-                  <h4>Play Store</h4>
-                </a>
-              </div>
-            </div>
-            <p>An app meant for people with colorblindness available on the Google Play
-              Store. It shifts the colors of the camera on your screen so people can
-              better distinguish between colors. This was my first application</p>
-            <p>The App Will be updated to support iOS by switching to React Native</p>
-          </div>
-          <div class="action" id="4">
-            <div class="action-title">
-              <h3>PuzzleTimer<span class="h3-span">— An App for Rubik’s Cube speedsolving</span></h3>
-              <p class="desc">GRADE 11 - ONGOING</p>
-              <div class="buttons">
-                <a href="https://github.com/llGaetanll/PuzzleTimer" class="ref-button">
-                  <h4>GitHub</h4>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.almela.gaetan.timer" class="ref-button">
-                  <h4>Play Store</h4>
-                </a>
-              </div>
-            </div>
-            <p>An App built using React Native that synchronizes rubik’s cube times
-              across both the website and the app.</p>
-          </div>
-          <div class="action" id="5">
-            <a href="">
-              <div class="action-title">
-                <h3>Magic!<span class="h3-span">— An App to facilitate Mathematics</span></h3>
-                <p class="desc">GRADE 12 - ONGOING</p>
-                <div class="buttons">
-                  <a href="https://github.com/llGaetanll/Magic" class="ref-button">
-                    <h4>GitHub</h4>
-                  </a>
-                </div>
-              </div>
-            </a>
-            <p>Allows the user to handwrite mathematical equations or operations on their devices.
-            </p>
-            <p>Equations are interpreted using a Neural Net and values can be assigned to the variables manually.</p>
-            <p>Manipulation of equations is extremly intuitive (i.e. dragging variables around) allowing for complex
-              operations and function chains.</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="skills">
-        <div class="block-wrapper">
-          <h2>SKILLS</h2>
-          <div class="action">
-            <p><b>Languages</b> HTML, CSS, Java, C++, Javascript, Python</p>
-          </div>
-          <div class="action">
-            <p><b>Frameworks</b> p5.js, JQuery, React Native, Node js</p>
-          </div>
-          <div class="action">
-            <p>Can work with <b>Illustrator</b>, <b>Photoshop</b>, <b>After Effects</b> and <b>Premiere Pro</b></p>
-          </div>
-          <div class="action">
-            <p>Experienced with <b>full stack</b> developement</p>
-          </div>
-          <div class="action">
-            <p>Can solve a Rubik’s cube in
-              under 12 seconds</p>
-          </div>
-          <h2>AWARDS</h2>
-          <div class="action">
-            <p><b>Published</b> social scientist in
-              the journal of Gulliver
-              Principles of Social Science -
-              Who controls the Web</p>
-          </div>
-          <div class="action">
-            <p>Winner of the 2017
-              <b>Congressional App Challenge</b>
-              for ChromaTilt</p>
-          </div>
-          <div class="action">
-            <p>Member of <b>French Honor Society</b></p>
-          </div>
-          <h2>LANGUAGES</h2>
-          <div class="action">
-            <p>Fluent English both in reading and writing.</p>
-          </div>
-          <div class="action">
-            <p>Fluent in French as first language.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
-
 </html>
