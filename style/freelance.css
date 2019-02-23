@@ -188,6 +188,10 @@ img {
   /* transition-duration: 0.2s; */
 }
 
+.card:hover .card-item {
+  transform: translateZ(50px);
+}
+
 .card > div:hover {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
 }
@@ -196,9 +200,10 @@ img {
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: contain;
-  transform: translateZ(50px);
   width: 200px;
   height: 200px;
+  transform: translateZ(0px);
+  transition-duration: 0.2s;
 }
 
 .logo {
