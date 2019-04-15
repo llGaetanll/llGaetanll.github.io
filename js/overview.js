@@ -89,6 +89,7 @@ function loadData(content) {
     }
 
     // console.log(parsedHTML);
+    console.log('this worked:', parsedHTML);
     $('.main').append(parsedHTML);
 }
 
@@ -118,13 +119,13 @@ function parseToHTML(carkDown) {
         return `<img src="${url}" class="cover-photo" />`;
     }
 
-    // bold text
-    let boldTexts = carkDown.match()
-    while(boldTexts) {
-        console.log(boldTexts);
-        carkDown =
-            carkDown.substring()
-    }
+    // // bold text
+    // let boldTexts = carkDown.match()
+    // while(boldTexts) {
+    //     console.log(boldTexts);
+    //     carkDown =
+    //         carkDown.substring()
+    // }
 
     return `<p>${carkDown}</p>`;
 }
