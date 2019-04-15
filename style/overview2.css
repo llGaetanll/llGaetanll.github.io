@@ -4,10 +4,6 @@ body {
   flex-direction: column;
   align-items: center;
   -webkit-font-smoothing: antialiased;
-
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 h1 {
@@ -16,7 +12,7 @@ h1 {
 
   font-family: 'Merriweather';
   font-weight: 900;
-  font-size: 60px;
+  font-size: 30px;
   color: black;
 }
 
@@ -72,6 +68,13 @@ a {
   text-decoration: none;
   color: #2079c7;
   font-weight: 700;
+
+  display: flex;
+  align-items: center;
+}
+
+a > h3 {
+  margin-left: 20px;
 }
 
 h3 > span {
@@ -88,6 +91,10 @@ h3 > span {
 
 /* TOP BAR */
 
+.top-bar {
+  grid-area: to;
+}
+
 .top-content {
   width: -webkit-fill-available;
   display: flex;
@@ -102,12 +109,12 @@ h3 > span {
 
 .t-logo {
   height: 40px;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 20px 0px 0px;
   cursor: pointer;
 }
 
-.underlined {
-  border-bottom: 2px solid var(--highlight-dark);
+.underlined > h3 {
+  color: var(--selected-text);
 }
 
 .top-link {
@@ -127,9 +134,16 @@ h3 > span {
   margin-bottom: 20px;
 }
 
-.cover-photo {
+/* .cover-photo {
   width: -webkit-fill-available;
   width: -moz-available;
+  display: block;
+} */
+
+.cover-photo {
+  width: 200px;
+  margin-right: 10px;
+  float: left;
   display: block;
 }
 
@@ -148,7 +162,7 @@ h3 > span {
   font-style: italic;
 }
 
-.main {
+/* .main {
   display: grid;
   grid-template-rows: 250px 140px 300px;
   grid-template-columns: 300px 1fr 1fr 1fr;
@@ -160,6 +174,23 @@ h3 > span {
   
   margin: 0px 250px;
   padding: 10px;
+} */
+
+.main {
+  display: grid;
+  grid-template-rows: auto 320px repeat(3, auto);
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "to to to to"
+    "ab ab ed ed"
+    "pr pr pr ou"
+    "pr pr pr ou"
+    "sk sk aw la";
+  
+  margin: 20px 250px;
+  padding: 10px;
+  transform: none;
 }
 
 #about-me {
@@ -223,10 +254,11 @@ h3 > span {
 
   .main {
     display: grid;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: auto 300px 300px 300px;
     grid-template-columns: 300px 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
+      "to to to"
       "ab ed pr"
       "ou ou pr"
       "sk aw la";
@@ -292,6 +324,7 @@ h3 > span {
     grid-template-columns: auto;
     grid-gap: 20px;
     grid-template-areas:
+      "to"
       "ab"
       "pr"
       "sk"

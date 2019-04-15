@@ -1,9 +1,6 @@
 const overview = {
     "About Me": [
         `^[https://i.imgur.com/Ktuxnr9.jpg]`,
-        `*[Hey!] I see that you've found my resume and I'm overjoyed 
-            that you would decide to spend your precious time reading it. 
-            So out of respect, I'll promise I'll keep it short.`,
         `*[My name is Gaetan Almela] and I'm a French software developer. 
             I moved to America when I was 14 and I've been programming since then.`,
         `My projects and awards are listed here on this page and you 
@@ -12,6 +9,11 @@ const overview = {
             *[gaetan.almela@gmail.com] and I'll be more than happy to get back to you!`
     ],
     "Education": [{
+            "title": "UMD, College Park",
+            "subtitle": "Maryland, MD",
+            "desc": "2019 - 2023",
+            "about": `The University I will be attending.`
+        }, {
             "title": "Gulliver Schools",
             "subtitle": "Miami, FL",
             "desc": "AUG 2015 - MAY 2019",
@@ -28,12 +30,6 @@ const overview = {
             "subtitle": "Mougins, France",
             "desc": "2011 - 2013 / 2014 - 2015",
             "about": `Where I learned english.`
-        },
-        {
-            "title": "Ecole des Maurettes",
-            "subtitle": "Villeneuve Loubet, France",
-            "desc": "2007 - 2011",
-            "about": `General troublemaker, professional doodler.`
         }
     ],
     "Outreach": [{
@@ -56,6 +52,25 @@ const overview = {
         }
     ],
     "Projects": [{
+            "title": "Accents",
+            "subtitle": "An extension to add accents to Chrome on Windows",
+            "desc": "GRADE 12",
+            "links": [{
+                    "name": "GitHub",
+                    "url": "https://github.com/Eugenebaba/Accents"
+                },
+                {
+                    "name": "Web Store",
+                    "url": "https://chrome.google.com/webstore/detail/accents-spanish-portugues/laiognlohmgkmlfchcclnjnafgeinnpg"
+                }
+            ],
+            "about": [
+                `Developed by Eugene Li and Gaetan Almela.`,
+                `Accents is an extention for Chrome on Windows that adds easy accents to the keyboard.
+                It emulates the accent system of MacOS while adding keyboard shortcuts and functionalities.`,
+                `The extention has *[over 1000 users].`
+            ]
+        }, {
             "title": "Mobius ML",
             "subtitle": "A tool for quadriplegics using Machine Learning",
             "desc": "GRADE 12",
