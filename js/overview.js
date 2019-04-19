@@ -10,7 +10,7 @@ function loadData(content) {
     for (let section in content) {
         let sectionData;
 
-        console.log('testing "' + section + '" of type', typeof content[section][0]);
+        // console.log('testing "' + section + '" of type', typeof content[section][0]);
         if (typeof content[section][0] == 'string') {
             // About Me would match here
             let strings = '';
@@ -89,7 +89,7 @@ function loadData(content) {
     }
 
     // console.log(parsedHTML);
-    console.log('this worked:', parsedHTML);
+    // console.log('this worked:', parsedHTML);
     $('.main').append(parsedHTML);
 }
 
@@ -119,13 +119,16 @@ function parseToHTML(carkDown) {
         return `<img src="${url}" class="cover-photo" />`;
     }
 
-    // // bold text
-    // let boldTexts = carkDown.match()
-    // while(boldTexts) {
-    //     console.log(boldTexts);
-    //     carkDown =
-    //         carkDown.substring()
-    // }
+    // bold text
+    let boldTexts = boldRegex.exec(carkDown);
+    while(boldTexts != null) {
+        console.log(boldTexts);
+        let text = carkDown.substring()
+
+        boldTexts = boldRegex.exec(carkDown);
+    }
+
+    console.log('----');
 
     return `<p>${carkDown}</p>`;
 }
