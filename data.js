@@ -4,7 +4,7 @@ const overview = {
         `*[My name is Gaetan Almela] and I'm a French software developer. 
             I moved to America when I was 14 and I've been programming since then.`,
         `My projects and awards are listed here on this page and you 
-            can *[click] on them to find out more on my GitHub[https://github.com/llGaetanll]`,
+            can *[click] on them to find out more on my GitHub[https://github.com/llGaetanll].`,
         `If you have any questions about my projects, you can contact me directly at 
             *[gaetan.almela@gmail.com] and I'll be more than happy to get back to you!`
     ],
@@ -42,7 +42,7 @@ const overview = {
             "title": "Minds DB",
             "subtitle": "Machine Learning with UC Berkeley",
             "desc": "GRADE 12",
-            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project here[https://github.com/mindsdb/mindsdb]`
+            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project here[https://github.com/mindsdb/mindsdb].`
         },
         {
             "title": "Breakthrough Miami",

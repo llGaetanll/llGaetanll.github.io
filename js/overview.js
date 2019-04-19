@@ -111,7 +111,7 @@ function parseToHTML(carkDown) {
     // const urlRegex;
 
     const regexs = [/img\[.*\]/g, /\*\[.*\]/g, ]
-    
+
     // images
     let url = carkDown.match(imgUrlRegex);
     if(url){
@@ -120,12 +120,40 @@ function parseToHTML(carkDown) {
     }
 
     // bold text
+    let boldI = 0; // this increments with exec
     let boldTexts = boldRegex.exec(carkDown);
+    let previousBoldIndex = 0;
     while(boldTexts != null) {
-        console.log(boldTexts);
-        let text = carkDown.substring()
+        let boldIndex = boldTexts.index;
+        let text = boldTextRegex.exec(carkDown);
+        carkDown = 
+            carkDown.substring(previousBoldIndex, boldIndex)
+            + `<b>${text[boldI]}</b>`
+            + carkDown.substring(boldIndex + text[boldI].length + 3);
 
+        console.log(carkDown);
+
+        boldI++;
         boldTexts = boldRegex.exec(carkDown);
+    }
+
+    // links
+    let ulrI = 0;
+    let link = urlLinkRegex.exec(carkDown);
+    let previousUrlIndex = 0;
+    while(link != null) {
+        let urlIndex = link.index; // regex of the name
+        let name = urlNameRegex.exec(carkDown);
+        let nameIndex = name.index;
+        carkDown = 
+            carkDown.substring(previousUrlIndex, nameIndex)
+            + `<a href="${link[ulrI]}">${name[ulrI]}</a>`
+            + carkDown.substring(urlIndex + name.length + link[ulrI].length);
+
+        console.log(carkDown);
+
+        ulrI++;
+        link = urlLinkRegex.exec(carkDown);
     }
 
     console.log('----');
