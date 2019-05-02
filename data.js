@@ -42,7 +42,7 @@ const overview = {
             "title": "Minds DB",
             "subtitle": "Machine Learning with UC Berkeley",
             "desc": "GRADE 12",
-            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab.`
+            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project here[https://github.com/mindsdb/mindsdb].`
         },
         {
             "title": "Breakthrough Miami",
@@ -68,7 +68,7 @@ const overview = {
                 `Developed by Eugene Li and Gaetan Almela.`,
                 `Accents is an extention for Chrome on Windows that adds easy accents to the keyboard.
                 It emulates the accent system of MacOS while adding keyboard shortcuts and functionalities.`,
-                `The extention has *[over 2000 users].`
+                `The extention has *[over 1000 users].`
             ]
         }, {
             "title": "Mobius ML",
