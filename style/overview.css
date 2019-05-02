@@ -195,15 +195,16 @@ h3 > span {
 .main {
   width: 900px;
   display: grid;
-  grid-template-rows: auto 320px repeat(3, auto);
+  grid-template-rows: auto auto repeat(4, auto);
   grid-template-columns: 300px 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
     "to to to to"
-    "ab ab ed ed"
-    "pr pr ou ou"
-    "pr pr ou ou"
-    "sk sk aw la";
+    "ab ab ou ou"
+    "pr pr ed ed"
+    "pr pr sk sk"
+    "pr pr aw aw"
+    "pr pr la la";
   
   /* margin: 20px 250px; */
   margin-top: 10px;
@@ -257,7 +258,7 @@ h3 > span {
   height: 10px;
 }
 
-@media all and (max-width: 1250px) {
+/* @media all and (max-width: 1250px) {
   .content {
     width: 750px;
   }
@@ -362,4 +363,4 @@ h3 > span {
     margin: 0;
     padding: 10px;
   }
-}
+} */
