@@ -77,10 +77,6 @@ a {
   align-items: center;
 }
 
-a > h3 {
-  margin-left: 20px;
-}
-
 h3 > span {
   font-family: 'Merriweather';
   font-weight: 400;
@@ -164,6 +160,22 @@ h3 > span {
   font-family: 'Open Sans';
   font-size: 14px;
   font-style: italic;
+}
+
+.ref-button {
+  background-color: #fff;
+  padding: 3px 7px;
+  margin: 5px 5px 5px 0px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.ref-button > h4 {
+  margin: 0;
+}
+
+.ref-button:hover {
+  box-shadow: var(--shadow);
 }
 
 /* .main {

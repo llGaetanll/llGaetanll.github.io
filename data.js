@@ -166,3 +166,17 @@ const overview = {
         `Fluent in French as first language.`
     ]
 }
+
+// each object in the array has some margin at the bottom
+// paragraphs support carkdown
+const PROJECTS = {
+    "Accents": [
+        `h1[This is the title]`,
+        `This is just a paragraph`,
+        `^[imgurl]`,
+        [
+            `^[imgurl]`,
+            `^[imgurl]`
+        ]
+    ]
+}

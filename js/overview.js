@@ -32,23 +32,24 @@ function loadData(content) {
 
             content[section].forEach(obj => {
                 let subtitleHTML = obj['subtitle'] ? `<span>— ${obj['subtitle']}</span>` : '';
-                let titleHTML = obj['title'] ? `<h3>${obj['title']} ${subtitleHTML}</h3>` : '';
+                let titleHTML = obj['title'] ? `<a href="./project.html?${obj['title'].replace(/[, ]/g, "-").toLowerCase()}"><h3>${obj['title']} ${subtitleHTML}</h3></a>` : '';
 
                 let descHTML = obj['desc'] ? `<p class="desc">${obj['desc']}</p>` : '';
 
-                let linksHTML;
+                let linksHTML = '';
 
                 // add buttons
-                if (obj['links']) {
-                    let links = obj['links'];
-                    linksHTML = '';
+                // if (obj['links']) {
+                //     console.log('link here');
+                //     let links = obj['links'];
+                //     linksHTML = '';
 
-                    links.forEach(l => {
-                        linksHTML += `<a class="ref-button" href="${l.url}"><h4>${l.name}</h4></a>`;
-                    });
-                }
+                //     links.forEach(l => {
+                //         linksHTML += `<a class="ref-button" href="${l.url}"><h4>${l.name}</h4></a>`;
+                //     });
+                // }
 
-                let aboutHTML;
+                let aboutHTML = '';
                 if (obj['about']) {
                     let about = obj['about'];
                     aboutHTML = '';
@@ -69,6 +70,7 @@ function loadData(content) {
                         ${titleHTML}
                         ${descHTML}
                     </div>
+                    ${linksHTML}
                     ${aboutHTML}
                 </div>`;
 
@@ -115,7 +117,6 @@ function parseToHTML(carkDown) {
     // images
     let url = carkDown.match(imgUrlRegex);
     if(url){
-        console.log(url);
         return `<img src="${url}" class="cover-photo" />`;
     }
 
@@ -130,8 +131,6 @@ function parseToHTML(carkDown) {
             carkDown.substring(previousBoldIndex, boldIndex)
             + `<b>${text[boldI]}</b>`
             + carkDown.substring(boldIndex + text[boldI].length + 3);
-
-        console.log(carkDown);
 
         boldI++;
         boldTexts = boldRegex.exec(carkDown);
@@ -150,13 +149,9 @@ function parseToHTML(carkDown) {
             + `<a href="${link[ulrI]}">${name[ulrI]}</a>`
             + carkDown.substring(urlIndex + name.length + link[ulrI].length);
 
-        console.log(carkDown);
-
         ulrI++;
         link = urlLinkRegex.exec(carkDown);
     }
-
-    console.log('----');
 
     return `<p>${carkDown}</p>`;
 }
