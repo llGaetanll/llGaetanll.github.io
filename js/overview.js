@@ -39,15 +39,15 @@ function loadData(content) {
                 let linksHTML = '';
 
                 // add buttons
-                // if (obj['links']) {
-                //     console.log('link here');
-                //     let links = obj['links'];
-                //     linksHTML = '';
+                if (obj['links']) {
+                    console.log('link here');
+                    let links = obj['links'];
+                    linksHTML = '';
 
-                //     links.forEach(l => {
-                //         linksHTML += `<a class="ref-button" href="${l.url}"><h4>${l.name}</h4></a>`;
-                //     });
-                // }
+                    links.forEach(l => {
+                        linksHTML += `<a class="ref-button" href="${l.url}"><h4>${l.name}</h4></a>`;
+                    });
+                }
 
                 let aboutHTML = '';
                 if (obj['about']) {

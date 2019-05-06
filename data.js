@@ -60,7 +60,7 @@ const overview = {
                     "url": "https://github.com/Eugenebaba/Accents"
                 },
                 {
-                    "name": "Web Store",
+                    "name": "PlayStore",
                     "url": "https://chrome.google.com/webstore/detail/accents-spanish-portugues/laiognlohmgkmlfchcclnjnafgeinnpg"
                 }
             ],
@@ -85,7 +85,6 @@ const overview = {
             ],
             "about": [
                 `Using a 3 layer feedforward Neural network built in tensorflow.js, this tool uses facial recognition to allow quadriplegics to move around with minimal effort and very little costs.`,
-                `An app for iOS is in the works.`
             ]
         },
         {
@@ -93,9 +92,9 @@ const overview = {
             "subtitle": "A Social Network Database",
             "desc": "FEB 16 2017 - ONGOING",
             "about": [
-                `A social Network/database optimised for memes made to categorise, classify and understand the internet’s humor. It comprises of an app a website and a database which are currently in developement.`,
-                `I plan to use this data for personal research with *[machine learning], however I also plan on releasing public datasets for anyone to use.`,
-                `Unfortunately, for security reasons, the project was recently made private. Please contact me at *[gaetan.almela@gmail.com] if you would want to know more about it`
+                `An internet meme database made to categorise, classify and understand the internet’s humor. It comprises of an app, a website, and a database.`,
+                `I plan to use this data for research with *[machine learning], however I also plan on releasing public datasets for anyone to use.`,
+                `Unfortunately, for security reasons, the project was made private. Please contact me at *[gaetan.almela@gmail.com] if you would want to know more about it`
             ]
         },
         {
@@ -170,13 +169,127 @@ const overview = {
 // each object in the array has some margin at the bottom
 // paragraphs support carkdown
 const PROJECTS = {
-    "Accents": [
-        `h1[This is the title]`,
-        `This is just a paragraph`,
-        `^[imgurl]`,
+    "accents": [
+        `h1[Accents]`,
+        `h4[Developed by Eugene Li and Gaetan Almela.]`,
+        ' ',
+        `h3[About]`,
+        `Accents is a Chrome extention for Windows users that adds easy accents to the keyboard.`,
+        `Eugene and I started developing this extention in February 2019, with the goal in mind to solve one problem:
+        The accents situation on Windows. For the longest time, windows has used alt codes to allow people to input special characters,
+        and while this can be handy for typing some obscure characters, more commonly used characters like accents suffer from this engineering decision.`,
+        `Additionally, some laptop and keyboards may not even have access to the necessary number pad to input accents, essentially preventing them 
+        to easily type in a language that makes use of them.`,
+        `Accents brings to Windows a lot of features from the accents system of MacOS, while adding a couple more, neat functionalities such as keyboard shortcuts
+        in order not to slow down the user every time they want to type in an accented character.`,
+        `Accents has *[over 2000 users].`,
         [
-            `^[imgurl]`,
-            `^[imgurl]`
+            [
+                '^[./assets/projects/accents/accents0.jpg]',
+                '^[./assets/projects/accents/accents1.jpg]'
+            ],
+            [
+                '^[./assets/projects/accents/accents2.jpg]',
+                '^[./assets/projects/accents/accents3.jpg]'
+            ]
+        ],
+        `h3[Contribute]`,
+        `Accents is completely open sourced for anybody to propose ideas or report bugs. We deemed it necessessary 
+        for the extension to remain open source as it would allow anybody to work on it or look into it, should they be interested in 
+        the project.`,
+        `$.button[h4[GitHub], https://github.com/Eugenebaba/Accents]`,
+        '---',
+        `h3[Install]`,
+        'The extension is free to download on the Google Play Store today.',
+        `$.button[h4[PlayStore], https://chrome.google.com/webstore/detail/accents-spanish-portugues/laiognlohmgkmlfchcclnjnafgeinnpg]`
+    ],
+    "mobius-ml": [
+        `h1[Mobius ML]`,
+        `h4[Developed Robert Cancio, Leah Boyd, David Krajewski, and Gaetan Almela.]`,
+        ' ',
+        'h3[About]',
+        `Mobius ML is a tremendous team effort between a group of 4 highschoolers to develop an app that allows quadriplegics to control 
+        their motorized wheelchairs using facial expressions.`,
+        `This project originally started in September 2018 as a submission for the $[Congressional App Challenge, https://www.congressionalappchallenge.us/] 
+        however it quickly evolved into something much more meaningful for all of us. We have created a prototype and pushed forward 
+        the idea that motorized wheelchairs could in fact be controlled using only expressions of the face.`,
+        `---`,
+        `h3[The Prototype]`,
+        `We first started by researching if the technology was possible. In our research, we found a Neural Net built by Google that plays 
+        Pac Man with a webcam. The network learns to track the head of the user and assigns a direction to pacman based on which direction you 
+        are looking in, and is ready to operate in seconds of training. We looked more into this Network and 
+        eventually modified and repurposed it to build out first prototype of Mobius ML.`,
+        `The problem with the original Network built by google is that it was built in with four directions, up down left and right, 
+        However it does not take into consideration that the user may not always want to be moving at all times. This is where the modification 
+        came in and we had to add one more potential output to our Neural Net.`,
+        `We realized that this network was not limited to movements of your head but instead can be trained on any image 
+        whatsoever. More testing showed that the network performed better unnder certain conditions that others so we spent some time 
+        making sure that those conditions could be met as often as possible. This includes things like a simple backdrop, behind the user's face, 
+        and lighting that doesn't wash out the lens of the camera.`,
+        `^.medium[./assets/projects/mobius-ml/prototype.jpg]`,
+        `We also designed an MVP for our app that would deventually connect to the wheelchair.`,
+        '---',
+        `h3[Video]`,
+        `YT[https://www.youtube.com/watch?v=zeTphRB3KK8]`,
+        `This video was our submission for the 2018 Congressional App Challenge, where we placed 3rd.`,
+        '---',
+        'h3[State of the Project]',
+        `Although our efforts have lead to some very interesting results, the project remains in the 
+        prototyping phase. As a team, we had to make a decision of what wee were going to do with the project and we decided that
+        we would rather pass it on. Everything from the code to the research is well documented, so that any team who may want to
+        pick up where we left off would have no problem doing so.`,
+        `You can find out more about how the our prototypes work under the $[GitHub repo, https://github.com/Mobility-Based-Infrastructure-Using-ML].`,
+        '---',
+        'h3[The Team]',
+        ' ',
+        [
+            [
+                '^.round.small[./assets/projects/mobius-ml/robert.jpg]',
+                'h3[Robert Cancio]',
+                'h5[Project Leader]'
+            ],
+            [
+                '^.round.small[https://via.placeholder.com/150]',
+                'h3[Leah Boyd]',
+                'h5[Project Manager]'
+            ],
+            [
+                '^.round.small[./assets/projects/mobius-ml/17649473.jpg]',
+                'h3[David Krajewski]',
+                'h5[Programmer]'
+            ],
+            [
+                '^.round.small[./assets/projects/mobius-ml/DSC_2288.JPG]',
+                'h3[Gaetan Almela]',
+                'h5[Lead Programmer]'
+            ],
         ]
+    ],
+    "memedb": [
+        `h1[MemeDB]`,
+        `h4[Developed Gaetan Almela.]`,
+        ' ',
+        'h3[About]',
+        `MemeDB is and internet meme database that allows you to search for all different kinds of memes across the internet.`,
+        `This is by far my most ambitious project and it started all the way back in Februrary of 2017 and is still ongoing today.
+        The project is both an image scraper and image classifier that automatically updates itself, adds and tags images to its database. However, 
+        users can upload their own images to the site and have the database classify them.`,
+        `The reason MemeDB is so ambitious is because it is a full stack project that requires all kinds of scrapers, and classifiers most if not all were built by me.`,
+        'h3[The Structure]',
+        ' ',
+        `h5[Scrapers]`,
+        `A Scraper is a program that automatically collects specific information across the internet. For example, Google uses a scraper (GoogleBot) to find new websites to add to Google's database.
+        Likewise, MemeDB uses it's own scrapers to collect different memes across several different websites and adds them to its database.`,
+        `These scripts constantly run on the backend.`,
+        `h5[Classification]`,
+        `Classification is probably not the best word to describe what happens to newly added images on the database. In order for people to find these images, MemeDB 
+        adds *[metadata] to them: data that classifies the data. This could be any text in image, or any objects that is detected, a color histogram, etc...
+        We do this because, when the user searches the database, we don't want to look through images and run these classification algorithms everytime, but instead through text and see what best matches 
+        the user's query.`,
+        `However, classification is not just a convinience, it's a necessity, as it prevents us from adding the same images to the database multiple times over and saves us a lot of space.
+        As a result, memedb only has one copy of each image, which allows for some interesting business models in which users can actually profit from...`,
+        `h5[Users]`,
+        `Users can login to MemeDB and upload their own images to the site, and can monetize them if they so choose. An ad appeard underneath the post, and users and memedb will profit at a 70 - 30% ratio respectively from the 
+        revenue of this ad.`
     ]
 }
