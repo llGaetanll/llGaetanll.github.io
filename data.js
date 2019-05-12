@@ -1,10 +1,10 @@
 const overview = {
     "About Me": [
-        `^[https://i.imgur.com/Ktuxnr9.jpg]`,
+        `^.cover-photo[https://i.imgur.com/Ktuxnr9.jpg]`,
         `*[My name is Gaetan Almela] and I'm a French software developer. 
             I moved to America when I was 14 and I've been programming since then.`,
         `My projects and awards are listed here on this page and you 
-            can *[click] on them to find out more on my GitHub[https://github.com/llGaetanll].`,
+            can *[click] on them to find out more on my $[GitHub, https://github.com/llGaetanll].`,
         `If you have any questions about my projects, you can contact me directly at 
             *[gaetan.almela@gmail.com] and I'll be more than happy to get back to you!`
     ],
@@ -42,7 +42,7 @@ const overview = {
             "title": "Minds DB",
             "subtitle": "Machine Learning with UC Berkeley",
             "desc": "GRADE 12",
-            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project here[https://github.com/mindsdb/mindsdb].`
+            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project $[here, https://github.com/mindsdb/mindsdb].`
         },
         {
             "title": "Breakthrough Miami",
@@ -115,8 +115,7 @@ const overview = {
                 }
             ],
             "about": [
-                `An app meant for people with colorblindness available on the Google Play Store. It shifts the colors of the camera on your screen so people can better distinguish between colors. This was my first application`,
-                `The app will be updated to support iOS by switching to React Native`
+                `An app meant for people with colorblindness available on the Google Play Store. It shifts the colors of the camera on your screen so people can better distinguish between colors. This was my first application.`
             ]
         },
         {
@@ -291,5 +290,12 @@ const PROJECTS = {
         `h5[Users]`,
         `Users can login to MemeDB and upload their own images to the site, and can monetize them if they so choose. An ad appeard underneath the post, and users and memedb will profit at a 70 - 30% ratio respectively from the 
         revenue of this ad.`
+    ],
+    "chromatilt": [
+        `h1[Chroma Tilt]`,
+        `h4[Developed by Kristian Zedan Gaetan Almela.]`,
+        ' ',
+        `h3[About]`,
+        `ChromaTilt is an app built for people with colorblindness that changes the colors on your android device allowing you to destinguish similar colors.`,
     ]
 }

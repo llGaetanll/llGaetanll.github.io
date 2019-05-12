@@ -105,10 +105,7 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         `<h1${classes.length > 0 ? classText : ''}${ids.length > 0 ? idText : ''}>${text.substring(p2 + 1, p3)}</h1>` +
                         text.substring(p3 + 1, text.length);
 
-                    text = carkDown(text, p0 + 4); // this + c isn't gonna cut it anymore we're gonna need a way to know by how much we should move the stack pointer
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
+                    text = carkDown(text, p0 + 4);
                     break;
                 case 'h2':
                     text =
@@ -117,10 +114,7 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     // recursively parses the inner text of the element
-                    text = carkDown(text, p0 + 4 + 0);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
+                    text = carkDown(text, p0 + 4);
                     break;
                 case 'h3':
                     text =
@@ -129,9 +123,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     text = carkDown(text, p0 + 4);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case 'h4':
                     text =
@@ -140,9 +131,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     carkDown(text, p0 + 4);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case 'h5':
                     text =
@@ -151,9 +139,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     text = carkDown(text, p0 + 4);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case '^':
                     // img
@@ -163,9 +148,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     carkDown(text, p0 + 9);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case '*':
                     // bold
@@ -175,9 +157,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     text = carkDown(text, p0 + 4);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case '_':
                     // italicized
@@ -187,9 +166,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(p3 + 1, text.length);
 
                     text = carkDown(text, p0 + 4);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text
                     break;
                 case '$':
                     // url has 2 parameters, we need to find the ,
@@ -209,9 +185,6 @@ function carkDown(text, p0 = 0, lvl = 0) {
                         text.substring(0, p1) +
                         `<a href="${text.substring(p4 + 1, p3).replace(/ /g, '')}"${classes.length > 0 ? classText : ''}${ids.length > 0 ? idText : ''}>${title}</a>` +
                         text.substring(p3 + 1, text.length);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text;
                     break;
                 case 'YT':
                     // youtube embeds
@@ -224,11 +197,11 @@ function carkDown(text, p0 = 0, lvl = 0) {
                                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                                 picture-in-picture" allowfullscreen></iframe>`
                         + text.substring(p3 + 1, text.length);
-
-                    // <p> only when other text comes after it
-                    text = textChars.length > p0 + 1 ? `<p>${carkDown(text, p0 + 9)}</p>` : text;
                     break;
             }
+
+            if(textChars.length > p3 - p0) // <p> only when other text comes before or after it
+                text = `<p>${carkDown(text, p0 + 9)}</p>`;
         }
 
         p0++; // this is kinda like the stack pointer
