@@ -1,11 +1,11 @@
 # About Me
-**My name is Gaetan Almela** and I'm a French software developer. I moved to America when I was 14 and I've been programming since then.
+My name is Gaetan Almela and I'm a French software developer. I moved to America when I was 14 and I've been programming since then.
 
-My projects and awards are listed here on this page and you can **click** on them to find out more on my [GitHub](https://github.com/llGaetanll).
+My projects and awards are listed here on this page and you can click on them to find out more on my [GitHub](https://github.com/llGaetanll).
 
 If you have any questions about my projects, you can contact me directly at **gaetan.almela@gmail.com** and I'll be more than happy to get back to you!
 
-#
+
 # Projects
 ### Accents
 #### Adding easy accents to windows
