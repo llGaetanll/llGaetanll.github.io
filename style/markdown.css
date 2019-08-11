@@ -1,0 +1,9 @@
+body {
+    margin: 0px 150px;
+    display: flex;
+}
+
+.sidebar {
+    width: 256px;
+    background: #f7f7f7;
+}

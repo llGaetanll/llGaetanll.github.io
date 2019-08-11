@@ -5,6 +5,15 @@ $(document).ready(function () {
 function loadData(content) {
     let parsedHTML = '';
 
+    // add logo
+    lottie.loadAnimation({
+        container: document.getElementById('logo'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'anims/animated logo.json' // the path to the animation json
+    });
+
     // iterates every section in the object
     for (let section in content) {
         let sectionData;

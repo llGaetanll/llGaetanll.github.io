@@ -8,7 +8,7 @@ If you have any questions about my projects, you can contact me directly at **ga
 
 # Projects
 ### Accents
-#### Adding easy accents to windows
+> Adding easy accents to windows
 Developed by Eugene Li, and Gaetan Almela.
 
 Accents is an extention for Chrome on Windows that adds easy accents to the keyboard. It emulates the accent system of MacOS while adding keyboard shortcuts and functionalities.
@@ -17,7 +17,7 @@ The extention has **over 2000 users**.
 [PlayStore](https://chrome.google.com/webstore/detail/accents-spanish-portugues/laiognlohmgkmlfchcclnjnafgeinnpg) | [GitHub](https://github.com/Eugenebaba/Accents)
 
 ### Mobius ML
-#### A tool for quadriplegics using machine learning
+> A tool for quadriplegics using machine learning
 Developed by Robert Cancio, David Krajewski, Leah Boyd, and Gaetan Almela.
 
 Using a 3 layer feed-forward Neural network built in tensorflow.js, this tool uses facial recognition to allow quadriplegics to move around with minimal effort and very little costs.
@@ -25,7 +25,7 @@ Using a 3 layer feed-forward Neural network built in tensorflow.js, this tool us
 [YouTube](https://www.youtube.com/watch?v=zeTphRB3KK8) | [GitHub](https://github.com/Mobility-Based-Infrastructure-Using-ML/MobiusML)
 
 ### ChromaTilt
-#### An App for people with colorblindness
+> An App for people with colorblindness
 Developed by Kristian Zedan and Gaetan Almela.
 
 An app meant for people with colorblindness available on the Google Play Store. It shifts the colors of the camera on your screen so people can better distinguish between colors. This was my first phone application.
@@ -66,17 +66,17 @@ Misc
 
 # Outreach
 ### Amazon 
-#### Scraping Sales Websites
+> Scraping Sales Websites
 Built a web scraper that Amazon France uses to scrape sales websites and facilitate their work.
 ### MindsDB
-#### Machine Learning with UC Berkeley
+> Machine Learning with UC Berkeley
 Contributed to [MindsDB](https://github.com/mindsdb/mindsdb), a machine learning library started by UC berkeley students. 
 
 # Awards
-Published social scientist in the journal of Gulliver Principles of Social Science - Who controls the Web,
+Published social scientist in the journal of Gulliver Principles of Social Science - Who controls the Web.
 
-Winner of the 2017 [Congressional App Challenge](https://www.congressionalappchallenge.us/) for ChromaTilt
+Winner of the 2017 [Congressional App Challenge](https://www.congressionalappchallenge.us/) for ChromaTilt.
 
 # Other
 - Fluent in French as first language.
-- Can solve a Rubik's cube in under 12 seconds
+- Can solve a Rubik's cube in under 12 seconds.

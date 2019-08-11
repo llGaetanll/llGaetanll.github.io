@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900|Open+Sans:300i,400,700"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Signika+Negative:700" rel="stylesheet">
-  <script src="jquery-3.3.1.min.js"></script>
-  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
-  <script src="data.js"></script>
-  <script src="carkDown.js"></script>
-  <!-- <script src="main.js"></script> -->
-  <script src="./js/overview.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="./style/min/main.min.css">
-  <link rel="stylesheet" href="./style/overview.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaetan Almela</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview</title>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
-
-<body>
-  <div class="main">
-    <div class="top-bar row">
-      <a href="./index.html"><img src="./logos/ColdLogo@4x.png" alt="Home" class="t-logo"></a>
-      <h1>Gaetan Almela</h1>
-      <div class="spacer phone-diss"></div>
+<body class="row">
+    <div class="column side-bar">
+        <div class="profile column">
+            <img src="https://i.imgur.com/Ktuxnr9.jpg">
+        </div>
+        <div class="tabs">
+            <a href="#aboutme" class="tab">ABOUT ME</a>
+            <a href="#experience" class="tab">EXPERIENCE</a>
+            <a href="#projects" class="tab">PROJECTS</a>
+            <a href="#outreach" class="tab">OUTREACH</a>
+            <a href="#awards" class="tab">AWARDS</a>
+        </div>
     </div>
-  </div>
+    <div class="column" id="content">
+        
+    </div>
+    <script src="./js/markdown.js"></script>
 </body>
-
 </html>
