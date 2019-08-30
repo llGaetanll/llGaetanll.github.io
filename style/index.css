@@ -11,6 +11,13 @@ a.tab {
     transition-duration: .2s;
 }
 
+h1::before {
+    content: '#';
+    color: #BBB;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 a.tab:hover {
     background: none;
     margin-left: 4px;
@@ -47,6 +54,7 @@ a.tab:hover {
 #content {
     width: 60%;
     margin-top: 45px;
+    margin-left: 20px;
 
     font-family: 'Roboto', sans-serif;
 }
