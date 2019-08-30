@@ -1,0 +1,114 @@
+body {
+    height: -webkit-fill-available;
+    height: -moz-available;
+}
+
+p {
+    margin-left: 10px;
+}
+
+a.tab {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+
+    margin: 10px 0px;
+
+    transition-duration: .2s;
+}
+
+h1::before {
+    content: '#';
+    color: #BBB;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+a.tab:hover {
+    background: none;
+    margin-left: 4px;
+}
+
+.side-bar {
+    width: 100px;
+    padding: 74px;
+    position: fixed;
+}
+
+/* profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: var(--spacer-2);
+}
+
+.profile h1 {
+    font-size: 0.9em;
+}
+
+.profile img {
+    height: 50px;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+/* content */
+
+#content {
+    width: 600px;
+    margin-top: 45px;
+    margin-left: 268px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#content li {
+    margin: 5px 0px; 
+}
+
+
+#content a {
+    all: unset;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+    color: #000;
+}
+
+#content a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#content a.section {
+    padding: 0;
+}
+
+#content a.section:hover {
+    all: unset;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+#content h1 {
+    margin: 10px 0px;
+}
+
+#content h3 {
+    font-size: 1.3em;
+}
+
+#content h4 {
+    font-style: italic;
+    font-weight: 300;
+}
