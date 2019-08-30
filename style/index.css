@@ -20,13 +20,6 @@ a.tab {
     transition-duration: .2s;
 }
 
-h1::before {
-    content: '#';
-    color: #BBB;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
 a.tab:hover {
     background: none;
     margin-left: 4px;
@@ -36,6 +29,19 @@ a.tab:hover {
     width: 100px;
     padding: 74px;
     position: fixed;
+
+    grid-area: sidebar;
+}
+
+.top-bar {
+    width: -webkit-fill-available;
+    height: 30px;
+    display: none;
+    position: fixed;
+
+    background-color: #fff;
+
+    grid-area: "topbar"
 }
 
 /* profile */
@@ -59,14 +65,23 @@ a.tab:hover {
     transform: translateY(-50%);
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 248px 600px;
+
+    grid-template-areas: 
+    "sidebar content"
+}
+
 /* content */
 
 #content {
-    width: 600px;
+    max-width: 600px;
     margin-top: 45px;
-    margin-left: 268px;
 
     font-family: 'Roboto', sans-serif;
+
+    grid-area: content;
 }
 
 #content li {
@@ -101,7 +116,14 @@ a.tab:hover {
 }
 
 #content h1 {
-    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#content h1::before {
+    content: '#';
+    color: #BBB;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 #content h3 {
@@ -111,4 +133,27 @@ a.tab:hover {
 #content h4 {
     font-style: italic;
     font-weight: 300;
+}
+
+@media all and (max-width: 899px) {
+    .grid {
+        grid-template-columns: auto;
+        grid-template-rows: 60px auto;
+    
+        grid-template-areas:
+        "topbar"
+        "content"
+    }
+
+    /* .top-bar {
+        display: flex;
+    } */
+
+    .side-bar {
+        display: none;
+    }
+
+    #content {
+        margin: 0px 10px;
+    }
 }
