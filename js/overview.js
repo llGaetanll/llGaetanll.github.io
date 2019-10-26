@@ -31,7 +31,11 @@ function loadData(content) {
 
             content[section].forEach(obj => {
                 let subtitleHTML = obj['subtitle'] ? `<span>— ${obj['subtitle']}</span>` : '';
-                let titleHTML = obj['title'] ? `<a href="./project.html?${obj['title'].replace(/[, ]/g, "-").toLowerCase()}"><h3>${obj['title']} ${subtitleHTML}</h3></a>` : '';
+                let titleHTML = obj['title'] ? `<h3>${obj['title']} ${subtitleHTML}</h3>` : '';
+
+                // check if title is info written about it
+                if (PROJECTS[obj['title'].replace(/[, ]/g, "-").toLowerCase()] != undefined)
+                    titleHTML = `<a href="./project.html?${obj['title'].replace(/[, ]/g, "-").toLowerCase()}">${titleHTML}</a>`
 
                 let descHTML = obj['desc'] ? `<p class="desc">${obj['desc']}</p>` : '';
 
@@ -39,7 +43,7 @@ function loadData(content) {
 
                 // add buttons
                 if (obj['links']) {
-                    console.log('link here');
+                    // console.log('link here');
                     let links = obj['links'];
                     linksHTML = '';
 

@@ -209,5 +209,3 @@ function carkDown(text, p0 = 0, lvl = 0) {
 
     return text;
 }
-
-console.log(carkDown('$.hello[hello, g]'))

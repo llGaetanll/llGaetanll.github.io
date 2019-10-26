@@ -12,12 +12,12 @@ const overview = {
             "title": "UMD, College Park",
             "subtitle": "Maryland, MD",
             "desc": "2019 - 2023",
-            "about": `The University I will be attending.`
+            "about": `The University I am currently attending.`
         }, {
             "title": "Gulliver Schools",
             "subtitle": "Miami, FL",
             "desc": "AUG 2015 - MAY 2019",
-            "about": `My high school i what got me into programming. I learned HTML 5 at the end of my freshman year and have continued to learn more since then.`
+            "about": `My high school got me into programming. I learned HTML 5 at the end of my freshman year and have continued to learn more since then.`
         },
         {
             "title": "British School of Brussels",
@@ -36,13 +36,13 @@ const overview = {
             "title": "Amazon France",
             "subtitle": "Scraping sales websites",
             "desc": "GRADE 12",
-            "about": `I built a web scraper that Amazon in France uses to scrape sales websites and facilitate their work.`
+            "about": `I built a web scraper that Amazon in France uses to scrape sales websites.`
         },
         {
             "title": "Minds DB",
             "subtitle": "Machine Learning with UC Berkeley",
             "desc": "GRADE 12",
-            "about": `I contributed to mindsdb, a machine learning library started by UC berkeley students. I added the entire section about adding the library to Google colab. You can find more about the project $[here, https://github.com/mindsdb/mindsdb].`
+            "about": `I contributed to $[MindsDB, https://github.com/mindsdb/mindsdb], a machine learning library started by UC berkeley students.`
         },
         {
             "title": "Breakthrough Miami",
@@ -70,33 +70,7 @@ const overview = {
                 It emulates the accent system of MacOS while adding keyboard shortcuts and functionalities.`,
                 `The extention has *[over 1000 users].`
             ]
-        }, {
-            "title": "Mobius ML",
-            "subtitle": "A tool for quadriplegics using Machine Learning",
-            "desc": "GRADE 12",
-            "links": [{
-                    "name": "GitHub",
-                    "url": "https://github.com/Mobility-Based-Infrastructure-Using-ML/MobiusML"
-                },
-                {
-                    "name": "YouTube",
-                    "url": "https://www.youtube.com/watch?v=zeTphRB3KK8"
-                }
-            ],
-            "about": [
-                `Using a 3 layer feedforward Neural network built in tensorflow.js, this tool uses facial recognition to allow quadriplegics to move around with minimal effort and very little costs.`,
-            ]
-        },
-        {
-            "title": "MemeDB",
-            "subtitle": "A Social Network Database",
-            "desc": "FEB 16 2017 - ONGOING",
-            "about": [
-                `An internet meme database made to categorise, classify and understand the internet’s humor. It comprises of an app, a website, and a database.`,
-                `I plan to use this data for research with *[machine learning], however I also plan on releasing public datasets for anyone to use.`,
-                `Unfortunately, for security reasons, the project was made private. Please contact me at *[gaetan.almela@gmail.com] if you would want to know more about it`
-            ]
-        },
+        }, 
         {
             "title": "ChromaTilt",
             "subtitle": "An App for people with colorblindness",
@@ -132,25 +106,14 @@ const overview = {
                 }
             ],
             "about": `An App built using React Native that synchronizes rubik’s cube times across both the website and the app.`
-        },
-        {
-            "title": "Magic!",
-            "subtitle": "An app to facilitate Mathematics",
-            "desc": "GRADE 12 - ONGOING",
-            "links": [{
-                "name": "GitHub",
-                "url": "https://github.com/llGaetanll/PuzzleTimer"
-            }],
-            "about": [
-                `Allows the user to handwrite mathematical equations or operations on their devices.`,
-                `Equations are interpreted using a Neural Net and values can be assigned to the variables manually.`,
-                `Manipulation of equations is extremly intuitive (i.e. dragging variables around) allowing for complex operations and function chains.`
-            ]
         }
     ],
     "Skills": [
-        `*[Languages] Javascript, HTML, CSS, Java, C++, Python`,
-        `*[Frameworks] p5.js, JQuery, React Native, Node js`,
+        `*[Languages] Javascript, Golang, SQL, Java, C++, Python, php, GLSL`,
+        `*[Frameworks] Redux, React Native, JQuery, OpenGL, OpenCV`,
+        `*[Libraries] Nextjs (SSR React), p5.js`,
+        `*[Tools] Docker, docker-compose, MongoDB, phpmyadmin, Git, AWS, REST, cmake`,
+        `*[Other] HTML, CSS, JSON, YAML, Markdown, Regex, $[CarkDown, https://gist.github.com/llGaetanll/dc4d4ce7ef4869a8b373ef15c8afc108]`,
         `Can work with *[Illustrator, Photoshop, After Effects and Premiere Pro]`,
         `Experienced with *[full stack] developement`,
         `Can solve a Rubik’s cube in under 12 seconds`
