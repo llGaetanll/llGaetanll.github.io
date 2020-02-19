@@ -72,6 +72,21 @@ const overview = {
             ]
         }, 
         {
+            "title": "DockerStarter",
+            "subtitle": "A fullstack boilerplate using the latest web technologies",
+            "desc": "2019 - 2020",
+            "links": [{
+                    "name": "GitHub",
+                    "url": "https://github.com/llGaetanll/DockerStarter/tree/dev"
+                }
+            ],
+            "about": [
+                `DockerStarter is a fullstack boilerplate written in Javascript and Go that utilizes microservices.`, 
+                `It contains technologies such as NextJS for server side rendering, Nginx for reverse proxying, 
+                GQLGen for GraphQL Generation, Gin-Gonic for fast http routing, MongoDB for data storage, and of course Docker.`
+            ] 
+        },
+        {
             "title": "ChromaTilt",
             "subtitle": "An App for people with colorblindness",
             "desc": "GRADE 11",
@@ -91,21 +106,6 @@ const overview = {
             "about": [
                 `An app meant for people with colorblindness available on the Google Play Store. It shifts the colors of the camera on your screen so people can better distinguish between colors. This was my first application.`
             ]
-        },
-        {
-            "title": "PuzzleTimer",
-            "subtitle": "An App for Rubik’s Cube speedsolving",
-            "desc": "GRADE 11 - ONGOING",
-            "links": [{
-                    "name": "GitHub",
-                    "url": "https://github.com/llGaetanll/PuzzleTimer"
-                },
-                {
-                    "name": "Plat Store",
-                    "url": "https://play.google.com/store/apps/details?id=com.almela.gaetan.timer"
-                }
-            ],
-            "about": `An App built using React Native that synchronizes rubik’s cube times across both the website and the app.`
         }
     ],
     "Skills": [
