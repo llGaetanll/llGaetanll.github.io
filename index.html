@@ -2,11 +2,33 @@
   <head>
     <meta charset="utf-8" />
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900|Open+Sans:300i,400,700|Signika+Negative:700|Material+Icons|Slabo+27px"
+      href="https://fonts.googleapis.com/css?family=Slabo+27px"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900|Open+Sans:300i,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Signika+Negative:700"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.3.1.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
-    <link rel="stylesheet" href="./style/main.min.css" />
+    <script src="data.js"></script>
+    <script src="carkDown.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="./js/overview.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./style/min/main.min.css"
+    />
     <link rel="stylesheet" href="./style/overview.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +39,7 @@
     <div class="main">
       <div class="top-bar row">
         <a href="./index.html"
-          ><img src="./assets/logo.png" alt="logo" class="t-logo"
+          ><img src="./logos/ColdLogo@4x.png" alt="Home" class="t-logo"
         /></a>
         <h1>Gaetan Almela</h1>
         <div class="spacer phone-diss"></div>
@@ -147,10 +169,14 @@
         <div class="block-wrapper">
           <div class="action">
             <div class="action-title">
-              <h3>
-                Accents
-                <span>— An extension to add accents to Chrome on Windows</span>
-              </h3>
+              <a href="./project.html?accents"
+                ><h3>
+                  Accents
+                  <span
+                    >— An extension to add accents to Chrome on Windows</span
+                  >
+                </h3></a
+              >
               <p class="desc">GRADE 12</p>
             </div>
             <a class="ref-button" href="https://github.com/Eugenebaba/Accents"
@@ -158,7 +184,7 @@
             ><a
               class="ref-button"
               href="https://chrome.google.com/webstore/detail/accents-spanish-portugues/laiognlohmgkmlfchcclnjnafgeinnpg"
-              ><h4>Web Store</h4></a
+              ><h4>Play Store</h4></a
             >
             <p>Developed by Eugene Li and Gaetan Almela.</p>
             <p>
@@ -166,14 +192,43 @@
               accents to the keyboard. It emulates the accent system of MacOS
               while adding keyboard shortcuts and functionalities.
             </p>
-            <p>The extention has <b>over 3,000 users</b>.</p>
+            <p>At its peak, the extention had <b>over 15000 users</b>.</p>
           </div>
           <div class="action">
             <div class="action-title">
               <h3>
-                ChromaTilt
-                <span>— An App for people with colorblindness</span>
+                DockerStarter
+                <span
+                  >— A fullstack boilerplate using the latest web
+                  technologies</span
+                >
               </h3>
+              <p class="desc">2019 - 2020</p>
+            </div>
+            <a
+              class="ref-button"
+              href="https://github.com/llGaetanll/DockerStarter/tree/dev"
+              ><h4>GitHub</h4></a
+            >
+            <p>
+              DockerStarter is a fullstack boilerplate written in Javascript and
+              Go that utilizes microservices.
+            </p>
+            <p>
+              It contains technologies such as NextJS for server side rendering,
+              Nginx for reverse proxying, GQLGen for GraphQL Generation,
+              Gin-Gonic for fast http routing, MongoDB for data storage, and of
+              course Docker.
+            </p>
+          </div>
+          <div class="action">
+            <div class="action-title">
+              <a href="./project.html?chromatilt"
+                ><h3>
+                  ChromaTilt
+                  <span>— An App for people with colorblindness</span>
+                </h3></a
+              >
               <p class="desc">GRADE 11</p>
             </div>
             <a
@@ -194,27 +249,6 @@
               Google Play Store. It shifts the colors of the camera on your
               screen so people can better distinguish between colors. This was
               my first application.
-            </p>
-          </div>
-          <div class="action">
-            <div class="action-title">
-              <h3>
-                PuzzleTimer <span>— An App for Rubik’s Cube speedsolving</span>
-              </h3>
-              <p class="desc">GRADE 11 - ONGOING</p>
-            </div>
-            <a
-              class="ref-button"
-              href="https://github.com/llGaetanll/PuzzleTimer"
-              ><h4>GitHub</h4></a
-            ><a
-              class="ref-button"
-              href="https://play.google.com/store/apps/details?id=com.almela.gaetan.timer"
-              ><h4>Play Store</h4></a
-            >
-            <p>
-              An App built using React Native that synchronizes rubik’s cube
-              times across both the website and the app.
             </p>
           </div>
           <div class="end"></div>
