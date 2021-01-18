@@ -62,6 +62,6 @@ img {
 }
 .main {
   width: var(--width);
+  height: fit-content;
   margin: 10px auto;
 }
-
