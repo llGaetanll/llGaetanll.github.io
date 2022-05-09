@@ -1,0 +1,6 @@
+[submodule "ext/WikiSimilarity"]
+	path = ext/WikiSimilarity
+	url = https://github.com/landrumb/WikiSimilarity
+[submodule "ext/autorice"]
+	path = ext/autorice
+	url = https://github.com/llGaetanll/autorice
