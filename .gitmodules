@@ -4,3 +4,6 @@
 [submodule "ext/autorice"]
 	path = ext/autorice
 	url = https://github.com/llGaetanll/autorice
+[submodule "ext/422-final-project"]
+	path = ext/422-final-project
+	url = git@github.com:llGaetanll/422-final-project.git
