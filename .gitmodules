@@ -1,0 +1,6 @@
+[submodule "ext/pokemon"]
+	path = ext/pokemon
+	url = git@github.com:llGaetanll/PokemonClassification.git
+[submodule "ext/wikipedia"]
+	path = ext/wikipedia
+	url = https://github.com/llGaetanll/WikiSimilarity
