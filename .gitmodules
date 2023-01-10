@@ -4,3 +4,6 @@
 [submodule "ext/wikipedia"]
 	path = ext/wikipedia
 	url = https://github.com/llGaetanll/WikiSimilarity
+[submodule "ext/rice"]
+	path = ext/rice
+	url = git@github.com:llGaetanll/autorice.git
