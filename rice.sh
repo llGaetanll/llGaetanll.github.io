@@ -1,1 +1,0 @@
-ext/autorice/rice.sh
