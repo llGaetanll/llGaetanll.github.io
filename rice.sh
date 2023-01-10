@@ -1,1 +1,1 @@
-ext/autorice/rice.sh
+ext/rice/rice.sh
